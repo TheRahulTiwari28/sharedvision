@@ -179,6 +179,18 @@ nav .icon-burger .line {
     transition-property: clip-path;
 }
   
+.sideimg{
+    position: static;
+}
+.sideimg div{
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    width: 60px;
+}
+.sideimg div img{
+    width: 100%;
+}
 
 section{
     padding: 20px 50px;
@@ -408,5 +420,8 @@ section{
     .home .content h1 span{
         font-size: 35px;
         margin-right: 20px;
+    }
+    .sideimg{
+        display: none;
     }
 }  
