@@ -334,6 +334,9 @@ section{
         margin-bottom: 20px;
     }
     .product-box .productImg{
+        width: 95%;
+    }
+    .product-box .productImg{
         margin-top: 10px;
     }
     .footer{
