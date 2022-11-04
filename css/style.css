@@ -333,6 +333,9 @@ section{
     .container-three .imgbox{
         margin-bottom: 20px;
     }
+    .product-box .productImg{
+        margin-top: 10px;
+    }
     .footer{
         display: flex;
         flex-direction: column;
