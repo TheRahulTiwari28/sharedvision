@@ -129,7 +129,7 @@ nav .icon-burger .line {
     z-index: 888;
     position: relative;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     /* transform: translateX(45%); */
@@ -229,6 +229,7 @@ section{
 
 .container-three{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     /* background: #323232; */
 }
@@ -268,10 +269,14 @@ section{
     .container-two .box img{
         width: 100px;
     }
-    .box div{
+    /* .box div{
         display: flex;
         justify-content: flex-start;
         align-items: center;
+    } */
+    .container-two .box h2{
+        line-height: 26px;
+        padding-bottom: 10px;
     }
     .container-three{
         display: flex;
