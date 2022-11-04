@@ -237,6 +237,34 @@ section{
     height: 100%;
 }
 
+.product{
+    background: url(../images//bg\ sliding\ poster.png) fixed center;
+    height: auto;
+}
+
+.product-box{
+    text-align: center;
+}
+
+.product-box h1{
+    color: #fff;
+    padding: 20px 0;
+}
+
+.product-box p{
+    color: #fff;
+}
+
+.product-box .productImg{
+    width: 80%;
+    margin: -23px auto;
+}
+
+.product-box .productImg img{
+    width: 100%;
+}
+
+
 .footer{
     background-image: url(../images/footer.png);
     width: 100%;
