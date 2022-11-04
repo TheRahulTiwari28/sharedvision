@@ -3,9 +3,11 @@
 	margin: 0;
     font-family: Helvetica;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     width: 100%;
-    /* overflow: hidden; */
 }
 nav {
 	position: fixed;
@@ -228,15 +230,13 @@ section{
 }
 
 .container-three{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* background: #323232; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container-three .imgbox{
-    width: 450px;
-    height: 400px;
+    /* width: 450px; */
+    /* height: 400px; */
     margin: 0 10px;
 }
 
@@ -245,6 +245,41 @@ section{
     height: 100%;
 }
 
+.footer{
+    background-image: url(../images/footer.png);
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.footer-box{
+    /* width: 520px; */
+    margin: auto;
+}
+
+.footer-box h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+    position: relative;
+    /* border-bottom: 1px solid #e65981; */
+}
+
+.footer-box p{
+    width: 500px;
+    border-top: 1px solid #e65981;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px;
+}
+.footer-box a img{
+    width: 40px;
+    margin: 10px 10px -30px;
+}
 @media (max-width: 920px){
     section {
         padding: 20px 30px;
@@ -280,18 +315,30 @@ section{
     }
     .container-three{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .container-three .imgbox{
-        width: 400px;
-        height: 350px;
-        margin: 0 10px;
     }
     
     .container-three .imgbox{
         margin-bottom: 20px;
     }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 55vh;
+        padding: 20px 0;
+    }
+    .footer-box p{
+        width: auto;
+        border-top: none;
+    }
+    .footer-border{
+        width: 90%;
+        border-bottom: 1px solid #e65981;
+        padding-bottom: 60px;
+    }
+
     
 }
 
