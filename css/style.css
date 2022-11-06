@@ -141,12 +141,13 @@ nav .icon-burger .line {
   
 .slider-navigation{
     z-index: 888;
-    position: relative;
+    position: absolute;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    /* transform: translateX(45%); */
+    transform: rotate(90deg);
+    right: 0;
+    bottom: 10%;
     margin-bottom: 12px;
 }
   
