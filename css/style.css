@@ -287,9 +287,21 @@ section{
     align-items: center;
     text-align: center;
     color: #fff;
+    position: relative;
 }
 .footer-box{
     margin: auto;
+    position: relative;
+}
+.footer::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #e65981;
+    width: 300px;
+    transform: rotate(90deg);
+    right: 39%;
+    /* left: 50%; */
 }
 
 .footer-box h1{
@@ -357,6 +369,9 @@ section{
         flex-direction: column;
         height: 55vh;
         padding: 20px 0;
+    }
+    .footer::after{
+        display: none;
     }
     .footer-box p{
         width: auto;
