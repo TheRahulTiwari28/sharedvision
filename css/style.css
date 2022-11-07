@@ -382,14 +382,18 @@ section{
 	nav .logo {
 		float: none;
 		justify-content: center;
+        height: 80%;
 	}
+    .logo img{
+        height: 100%;
+    }
 	nav .links {
 		float: none;
 		position: fixed;
 		z-index: 9;
 		left: 0;
 		right: 0;
-		top: 100px;
+		top: 85px;
 		bottom: 100%;
 		width: auto;
 		height: auto;
