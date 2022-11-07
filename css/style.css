@@ -84,9 +84,8 @@ nav .icon-burger .line {
 
 .home{
     position: relative;
-    background-image: url(../images/header\ bg.png);
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -445,3 +444,93 @@ section{
         display: none;
     }
 }  
+
+/* Navigation Dots */
+#dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 35%;
+    right: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #dots ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 15px 0 0 15px;
+    margin: auto;
+    padding: 10px;
+    /* background: rgba(0, 0, 0, .3); */
+    list-style: none;
+  }
+  
+  .dot {
+    cursor: pointer;
+    /* background: #2793e8; */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 10px auto;
+    border: 2px solid #fff;
+  }
+  
+  .dot--active {
+    -webkit-animation-name: active;
+    animation-name: active;
+    -webkit-animation: active 0.5s ease-in-out 75ms;
+    animation: active 0.5s ease-in-out 75ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  /* ================================================================ */
+  /* animation for active dot */
+  
+  @-webkit-keyframes active {
+    from {
+      opacity: 0;
+      -webkit-transform: scale(.3);
+      transform: scale(.3);
+      -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, .5);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, .5);
+    }
+    50% {
+      opacity: .5;
+      -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, .5);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, .5);
+    }
+    100% {
+      opacity: 1;
+      background: #ff4081;
+      -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, .5), 0 0 1px 1px #3851bc, 0 0 0 1px rgba(255, 255, 255, .5);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, .5), 0 0 1px 1px #3851bc, 0 0 0 1px rgba(255, 255, 255, .5);
+    }
+  }
+  
+  @keyframes active {
+    from {
+      opacity: 0;
+      -webkit-transform: scale(.3);
+      transform: scale(.3);
+      -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, .5);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, .5);
+    }
+    50% {
+      opacity: .5;
+      -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, .5);
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, .5);
+    }
+    100% {
+      opacity: 1;
+      background: #ffffff;
+    }
+  }
