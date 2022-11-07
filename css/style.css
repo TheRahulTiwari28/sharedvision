@@ -84,7 +84,7 @@ nav .icon-burger .line {
 .home{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 93vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -136,37 +136,6 @@ nav .icon-burger .line {
     height: 100%;
     object-fit: cover;
 }
-  
-.slider-navigation{
-    z-index: 888;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(90deg);
-    right: 0;
-    bottom: 10%;
-    margin-bottom: 12px;
-}
-  
-.slider-navigation .nav-btn{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 4px;
-    box-shadow: 0 0 2px rgb(255, 255, 255);
-    transition: 0.3s ease;
-}
-  
-.slider-navigation .nav-btn.active{
-    background: #fff;
-}
-  
-.slider-navigation .nav-btn:hover{
-    transform: scale(1.2);
-}
-  
 .video-slide{
     position: absolute;
     width: 100%;
@@ -178,6 +147,25 @@ nav .icon-burger .line {
     transition-property: clip-path;
 }
   
+.down-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b3dceba6;
+    padding: 0;
+    height: 50px;
+    position: relative;
+}
+.down-arrow a{
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 35px;
+}
+.down-arrow a img{
+    width: 100%;
+    height: 100%;
+}
 .sideimg{
     position: static;
 }
