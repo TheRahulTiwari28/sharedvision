@@ -322,7 +322,7 @@ section{
         margin: 60% auto auto auto;
     }
     .home .content h1{
-      font-size: 3em;
+      font-size: 40px;
       line-height: 60px;
     }
     .container-one{
@@ -423,11 +423,11 @@ section{
         margin: 60% auto auto auto;
     }    
     .home .content h1{
-        font-size: 50px;
+        font-size: 40px;
         line-height: 55px;
     } 
     .home .content h1 span{
-        font-size: 35px;
+        font-size: 30px;
         margin-right: 20px;
     }
     .sideimg{
