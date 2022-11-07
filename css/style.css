@@ -327,6 +327,9 @@ section{
     section {
         padding: 20px 30px;
     }
+    .home{
+        height: 90vh;
+    }
     .home .content{
         width: 80%;
         margin: 60% auto auto auto;
