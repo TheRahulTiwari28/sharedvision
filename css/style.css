@@ -213,6 +213,7 @@ section{
 
 .container-two{
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.041);
     display: flex;
     justify-content: space-between;
     align-items: center;
