@@ -299,7 +299,7 @@ section{
     content: "";
     position: absolute;
     height: 2px;
-    background-color: #e65981;
+    background-color: #0066ff;
     width: 300px;
     transform: rotate(90deg);
     right: 39%;
@@ -314,7 +314,7 @@ section{
 
 .footer-box p{
     width: 500px;
-    border-top: 1px solid #e65981;
+    border-top: 1px solid #0066ff;
     padding: 5px;
     font-size: 14px;
     color: #fff;
@@ -385,7 +385,7 @@ section{
     }
     .footer-border{
         width: 90%;
-        border-bottom: 1px solid #e65981;
+        border-bottom: 1px solid #0066ff;
         padding-bottom: 60px;
         margin-bottom: 0px;
     }   
@@ -483,7 +483,7 @@ section{
     width: 10px;
     height: 10px;
     margin: 10px auto;
-    border: 2px solid #000;
+    border: 2px solid #0066ff;
   }
   
   .dot--active {
