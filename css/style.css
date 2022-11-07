@@ -10,13 +10,13 @@ body{
     width: 100%;
 }
 .hone{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     color: #323232;
     line-height: 35px;
 }
 .paragraph{
-    font-size: 18px;
+    font-size: 14px;
     font-size: 400;
     line-height: 24px;
     color: #999999;
@@ -28,7 +28,7 @@ nav {
 	right: 0;
 	top: 0;
 	padding: 0 5%;
-	height: 100px;
+	height: 85px;
 	background-color: rgba(0,0,0,.2);
     display: flex;
     justify-content: space-between;
@@ -314,6 +314,7 @@ section{
     width: 500px;
     border-top: 1px solid #e65981;
     padding: 5px;
+    font-size: 14px;
     color: #fff;
 }
 .footer-box a img{
