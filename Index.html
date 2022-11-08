@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/sharedvision.png">
-    <title>Shared Vision</title>
+    <title>SharedVision</title>
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
     <!--===== HEADER =====-->
-    <nav>
+    <nav class="nav">
         <input id="nav-toggle" type="checkbox">
         <div class="logo">
             <a href="/Index.html">
               <img src="/images/sharedvision.png" alt="">
             </a>
         </div>
-        <ul class="links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+        <ul class="links" onclick="myFunction(event)">
+            <li><a class="active" href="#home" onclick="closenav()">Home</a></li>
+            <li><a href="#about" onclick="closenav()">About</a></li>
+            <li><a href="#contact" onclick="closenav()">Contact Us</a></li>
            
         </ul>
         <label for="nav-toggle" class="icon-burger">
@@ -33,23 +33,7 @@
     <!--===== HEADER =====-->
     <div class=" home js-Dots" id="home">
         <video class="video-slide active" src="/video/bg video.mp4" autoplay muted loop></video>
-        <video class="video-slide" src="/video/bg video.mp4" autoplay muted loop></video>
-        <video class="video-slide" src="/video/bg video.mp4" autoplay muted loop></video>
-        <video class="video-slide" src="/video/bg video.mp4" autoplay muted loop></video>
-        <video class="video-slide" src="/video/bg video.mp4" autoplay muted loop></video>
         <div class="content active">
-          <h1>Welcome To The Era Of <br><span>Latest Technologies</span></h1>
-          <a href="#about">Get Started</a>
-        </div>
-        <div class="content">
-          <h1>Lorem ipsum dolor sit amet. <br><span>Latest Technologies</span></h1>
-          <a href="#about">Get Started</a>
-        </div>
-        <div class="content">
-          <h1>Welcome To The Era Of <br><span>Lorem ipsum dolor sit amet.</span></h1>
-          <a href="#about">Get Started</a>
-        </div>
-        <div class="content">
           <h1>Welcome To The Era Of <br><span>Latest Technologies</span></h1>
           <a href="#about">Get Started</a>
         </div>
@@ -120,7 +104,7 @@
           </div>
         </div>
       </section>
-      <div class="footer js-Dots" id="contact">
+      <div class="footer" id="contact">
         <!-- <div class="footer-container"> -->
           <div class="footer-box footer-border">
             <h1 class="hone">Address</h1>

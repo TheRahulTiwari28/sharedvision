@@ -1,43 +1,13 @@
- //Javacript for video slider navigation
- const btns = document.querySelectorAll(".nav-btn");
- const slides = document.querySelectorAll(".video-slide");
- const contents = document.querySelectorAll(".content");
 
- var sliderNav = function(manual){
-   btns.forEach((btn) => {
-     btn.classList.remove("active");
-   });
-
-   slides.forEach((slide) => {
-     slide.classList.remove("active");
-   });
-
-   contents.forEach((content) => {
-     content.classList.remove("active");
-   });
-
-   btns[manual].classList.add("active");
-   slides[manual].classList.add("active");
-   contents[manual].classList.add("active");
- }
-
- btns.forEach((btn, i) => {
-   btn.addEventListener("click", () => {
-     sliderNav(i);
-   });
- });
+// humburger menu
+function closenav(){
+  document.getElementById("nav-toggle").checked = false;
+}
 
 
- 
  /* vertical navigation dots */
 const VND = ((document, window) => {
   'use strict';
-
-  /* Render Methods
-   * Dots - render vertical navigation dots in BODY
-   * ID fod each dot - nav-toSection#${indexOfSection}
-   * Class - nav__dot
-   */
   const render = {
     Dots(sections) {
       const listOfdots = sections.map((element, index) =>
@@ -46,23 +16,11 @@ const VND = ((document, window) => {
       document.body.innerHTML += `<section id="dots"><ul>${listOfdots}</ul></section>`;
     },
   };
-  // ==============================================
-
-  /* Normalize Methods
-   * positionTop - normalized scrollTop value based on header height
-   */
   const normalized = {
-    // normalized scroll value based on header height
     positionTop(positionTop) {
       return positionTop - getSize.headerHeight();
     },
   };
-  // ==============================================
-
-  /* Validate Methods
-   * scrollThrowSection -  return boolean is scroll top going throw section
-   * visibleElement - return boolean is visible element or not
-   */
   const is = {
     scrollThrowSection(positionScroll) {
       const {rangeY: {value}} = position;
@@ -78,8 +36,6 @@ const VND = ((document, window) => {
       return styleDisplay !== 'none' && styleVisibility !== 'hidden';
     },
   };
-  // ==============================================
-
   const getSize = {
     headerHeight() {
       const header = document.querySelector('header');
@@ -97,12 +53,6 @@ const VND = ((document, window) => {
       return element.offsetHeight + marginBottom;
     },
   };
-  // ==============================================
-
-  /* Scrolling Methods
-   * top - scroll to value
-   * stop - run callBack when scrolling stop
-   */
   const scroll = {
     top(value) {
       scrollBy({
@@ -128,12 +78,6 @@ const VND = ((document, window) => {
       isScrolling();
     },
   };
-  // ==============================================
-
-  /* Customized Keyboard Methods
-   * 33 - PagUp Key
-   * 34 - PageDown Key
-   */
   const keyboard = {
     getKeyCode(event) {
       return event.which || event.keyCode;
@@ -153,15 +97,6 @@ const VND = ((document, window) => {
       scroll.top(nextPositionTop);
     },
   };
-  // ==============================================
-
-  /*  Dom Methods
-   * getAllElements - get array elements
-   * containClass - check if element contain class (true/false)
-   * addClass - add class to element
-   * removeClass - find element with class between elements and remove that class
-   * toggleCls - toggle class remove from Elements add to element
-   */
   const dom = {
     getAllElements(cls) {
       const listOfElements = document.querySelectorAll(`.${cls}`);
@@ -197,15 +132,6 @@ const VND = ((document, window) => {
       this.toggleCls(Dots, nextDot, 'dot--active');
     },
   };
-  // ==============================================
-
-  /*
-   * rangeY - set & get range Y of element
-   * scrollThrow - return true or false if scroll going throw range Y
-   * getTop - position of top element
-   * getPrevTop - distances from previous section to top
-   * getNextTop - distances from next section to top
-   */
   const position = {
     rangeY: {
       range: {
@@ -269,14 +195,6 @@ const VND = ((document, window) => {
       return normalized.positionTop(nextPositionTop);
     },
   };
-  // ==============================================
-
-  /*
-   * Dots - handle scroll & toggle class when click on dots
-   * pgUpDownKeys - handle scroll when press keys PgUpp PgDown
-   * scrolling - handle scroll & toggle class when use scroll
-   * resize - handle hide dots on small screen
-   */
   const handleListener = {
     listener({element, event, callBack, arg}) {
       element.addEventListener(event, (evn) => callBack({evn, arg}));
@@ -333,10 +251,8 @@ const VND = ((document, window) => {
       },
 
       init({arg: screenSize}) {
-        // ignore resize events as long as an actualResizeHandler execution is in the queue
         if (!this.resizeTimeout) {
           this.resizeTimeout = setTimeout(() => {
-            // The actualResizeHandler will execute at a rate of 15fps
             this.resizeTimeout = null;
             this.hideOnSmallScreen(screenSize);
           }, 66);
@@ -344,8 +260,6 @@ const VND = ((document, window) => {
       },
     },
   };
-  // ==============================================
-
   const init = function({cls, hideOnScreenLess = 0} = {}) {
     const {
       listener,

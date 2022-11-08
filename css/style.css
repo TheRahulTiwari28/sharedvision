@@ -56,7 +56,7 @@ nav .links li {
 }
 nav .links a {
 	display: block;
-	padding: 1em;
+	padding: 6px 16px;
 	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
@@ -136,17 +136,10 @@ nav .icon-burger .line {
     height: 100%;
     object-fit: cover;
 }
-.video-slide{
-    position: absolute;
-    width: 100%;
+.actives{
+    /* background: #0066ff; */
+    border-bottom: 1px solid #0066ff;
 }
-  
-.video-slide.active{
-    clip-path: circle(150% at 0 50%);
-    transition: 2s ease;
-    transition-property: clip-path;
-}
-  
 .down-arrow{
     display: flex;
     justify-content: center;
@@ -193,10 +186,17 @@ section{
     border-bottom: 1px solid #e65981;
     margin: 40px 0;
 }
+.container-one .hone{
+    font-size: 32px;
+}
 .container-one span{
+    font-size: 32px;
     color: #e65981;
 }
-
+.container-one p{
+    font-size: 22px;
+    padding: 10px 0;
+}
 .container-two{
     margin: auto;
     background-color: rgba(0, 0, 0, 0.041);
@@ -222,12 +222,13 @@ section{
     line-height: 56px;
     color: #323232;
 }
-.container-one p, .box p, .product-box p{
+.box p, .product-box p{
     font-size: 18px;
 }
 .container-three{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 40px;
 }
 
 .container-three .imgbox{
@@ -249,12 +250,15 @@ section{
 }
 
 .product-box h1{
+    font-size: 32px;
     color: #fff;
     padding: 20px 0;
 }
 
 .product-box p{
     color: #fff;
+    font-size: 22px;
+    padding: 10px 0;
 }
 
 .product-box .productImg{
