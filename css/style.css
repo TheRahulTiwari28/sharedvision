@@ -88,6 +88,7 @@ nav .icon-burger .line {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
   
 .home .content{
@@ -152,7 +153,7 @@ nav .icon-burger .line {
 .down-arrow a{
     position: absolute;
     top: 0;
-    width: 80px;
+    width: 70px;
     height: 35px;
 }
 .down-arrow a img{
@@ -242,7 +243,11 @@ section{
 }
 
 .product{
-    background: url(../images//bg\ sliding\ poster.png) fixed center;
+    background: url(../images//bg\ sliding\ poster.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: auto;
 }
 
